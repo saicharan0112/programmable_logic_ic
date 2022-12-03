@@ -1,7 +1,7 @@
 --- 
 # TinyTapeout project information
 project:
-  wokwi_id:    334445762078310996        # If using wokwi, set this to your project's ID
+  wokwi_id:    350008746567533140        # If using wokwi, set this to your project's ID
 #  source_files:        # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here
 #    - verilog/rtl/counter.v
 #    - verilog/rtl/decoder.v
@@ -14,33 +14,41 @@ project:
 #
 # This info will be automatically collected and used to make a datasheet for the chip.
 documentation: 
-  author:       ""      # Your name
+  author:       "saicharan0112"      # Your name
   discord:      ""      # Your discord handle - make sure to include the # part as well
-  title:        ""      # Project title
-  description:  ""      # Short description of what your project does
-  how_it_works: ""      # Longer description of how the project works
+  title:        "reversible_programmable_logic_ic"      # Project title
+  description:  "Quad 3-input Fredkin gate which can be programmed into the 3 basic logic gates - AND, OR and NOT whose outputs are reversible"  # Short description of what your project does
+  how_it_works: "Refer to datasheet.md inside saicharan0112/reversible_programmable_logic_ic repo"      # Longer description of how the project works
   how_to_test:  ""      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  ""      # Describe any external hardware needed
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
+  doc_link:     "Refer to datasheet.md inside saicharan0112/reversible_programmable_logic_ic repo"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required) we are expecting max clock frequency to be ~6khz. Provided on input 0.
   picture:      ""      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
-    - clock
-    - reset
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-  outputs:
-    - segment a         # a description of what the outputs do
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
-    - none
+    - in0 [input A to the first Fredkin gate]
+    - in1 [input B to the first Fredkin gate]
+    - in2 [input C to the first Fredkin gate]
+    - in3 [input A to the second Fredkin gate]
+    - in4 [input B to the second Fredkin gate]
+    - in5 [input C to the second Fredkin gate]
+    - in6 [input A to the third Fredkin gate]
+    - in7 [input B to the third Fredkin gate]
+    - in8 [input C to the third Fredkin gate]
+    - in9 [input A to the fourth Fredkin gate]
+    - in10 [input B to the fourth Fredkin gate]
+    - in11 [input C to the fourth Fredkin gate]
+  outputs:               # a description of what the outputs do
+    - out0 [output X to the first Fredkin gate]
+    - out1 [output Y to the first Fredkin gate]
+    - out2 [output Z to the first Fredkin gate]
+    - out3 [output X to the second Fredkin gate]
+    - out4 [output Y to the second Fredkin gate]
+    - out5 [output Z to the second Fredkin gate]
+    - out6 [output X to the third Fredkin gate]
+    - out7 [output Y to the third Fredkin gate]
+    - out8 [output Z to the third Fredkin gate]
+    - out9 [output X to the fourth Fredkin gate]
+    - out10 [output Y to the fourth Fredkin gate]
+    - out11 [output Z to the fourth Fredkin gate]
 
