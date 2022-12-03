@@ -40,12 +40,12 @@ module tiny_user_project(
 );
 
 // pass input and output pins defined in user_defines.v
-user_module_334445762078310996 mod (
-    io_in[15:8],
-    io_out[23:16]
+user_module_350008746567533140 mod (
+    io_in[19:8],
+    io_out[31:20]
 );
 // all output enabled
-assign io_oeb[23:16] = 8'b0;
+assign io_oeb[31:20] = 8'b0;
 
 endmodule	// tiny_user_project
 
